@@ -1,5 +1,5 @@
 {
-  "active": false,
+  "active": true,
   "hostname": "rdpfree-1",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
@@ -8,11 +8,11 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-11T10:50:54Z",
-  "expires_at": "2026-10-11T16:45:54Z",
+  "started_at": "2026-10-11T14:26:11Z",
+  "expires_at": "2026-10-11T20:21:11Z",
   "duration_menit": 355,
   "run_id": "38133139791",
-  "run_attempt": "1",
+  "run_attempt": "2",
   "run_number": "1",
   "run_url": "https://github.com/NaufalKenzo/rdp-laurent22/actions/runs/38133139791",
   "mode": "bersih+win10",
@@ -43,16 +43,16 @@
   },
   "grafis": {
     "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
     "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
-    "debug": "",
-    "install": "mesa 26.2.4.0 [Mesa/X.org]",
+    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
     "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "dir": "C:\\XyRDP\\grafis",
-    "mesa": "26.2.4",
-    "adapters": "Microsoft Hyper-V Video",
+    "debug": "",
     "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
-    "mode": "software"
+    "mode": "software",
+    "adapters": "Microsoft Hyper-V Video",
+    "dir": "C:\\XyRDP\\grafis",
+    "install": "mesa 26.2.4.0 [Mesa/X.org]",
+    "mesa": "26.2.4"
   },
   "extras": {
     "lightshot": "skip",
@@ -64,31 +64,30 @@
     "admin": true
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
       "status": "ok",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    }
+      "hostname": "rdpfree-1",
+      "ip": "100.126.15.59",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "magicdns": "rdpfree-1-1.tail98bb02.ts.net."
+    },
+    "mode": "tailscale"
   },
   "media": {
-    "audio_output": "rdp_playback_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon",
+    "microphone": "rdp_capture_enabled",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "microphone": "rdp_capture_enabled"
+    "wallpaper": "xyverse_configured_for_user_logon",
+    "audio_output": "rdp_playback_enabled"
   },
   "game_environment": {
-    "os": "Microsoft Windows Server 2022 Datacenter",
     "play_tested": false,
     "windows_server": true,
+    "os": "Microsoft Windows Server 2022 Datacenter",
     "hypervisor_present": true,
     "runner": "github"
   },
   "games": {
-    "minecraft_java": {
+    "samp": {
       "status": "disabled",
       "note": "Tidak dipilih"
     },
@@ -96,15 +95,13 @@
       "status": "disabled",
       "note": "Tidak dipilih"
     },
-    "minecraft_bedrock": {
+    "minecraft_java": {
       "status": "disabled",
       "note": "Tidak dipilih"
     },
-    "samp": {
+    "minecraft_bedrock": {
       "status": "disabled",
       "note": "Tidak dipilih"
     }
-  },
-  "heartbeat_at": "2026-10-11T14:14:29.1061681Z",
-  "stopped_at": "2026-10-11T14:17:54Z"
+  }
 }
